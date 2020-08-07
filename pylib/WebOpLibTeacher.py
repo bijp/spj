@@ -7,7 +7,6 @@ from pylib.WebOpLibShare import WEB_SHARE
 class WebOpLibTeacher:
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
 
-
     def teacher_login(self,username,password):
         WEB_SHARE.wd.get(g_teacher_login_url)
         WEB_SHARE.wd.find_element_by_id('username').send_keys(username)
